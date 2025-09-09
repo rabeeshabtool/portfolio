@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabeesha Batool - AI & Robotics Enthusiast Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f1419 0%, #1a252f 100%);
+            color: #e5e7eb;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            box-shadow: inset 0 0 50px rgba(99, 102, 241, 0.3);
+        }
+        .ai-theme {
+            border: 1px solid #3b82f6;
+            background: rgba(59, 130, 246, 0.1);
+        }
+        .robot-glow {
+            text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+        }
+        .progress-bar {
+            height: 10px;
+            background: #374151;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6 0%, #1e40af 100%);
+            border-radius: 5px;
+            transition: width 1.5s ease-out;
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(59, 130, 246, 0.7);
+        }
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .section-card {
+            transition: all 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        .skill-icon {
+            font-size: 2rem;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Hero Section -->
+    <header class="hero-bg py-20 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3fb16b98-2b87-4a58-9ecd-a401ce52a9a2.png" alt="Futuristic robotic laboratory scene with sleek AI machines, glowing control panels, holographic displays showing neural networks and mechanical arms assembling components in a high-tech modern facility with blue neon lighting and stainless steel surfaces" class="w-full h-full object-cover" />
+        </div>
+        <div class="relative z-10">
+            <img src="c:\Users\rizwa\OneDrive\Pictures\rabeesha.jpeg" alt="Portrait of a young girl with a futuristic headset and robotic tools, smiling confidently in a modern tech lab setting with AI holograms and engineering blueprints in the background, styled with neon blue accents and professional lighting" class="rounded-full mx-auto mb-6 border-4 border-blue-400 animate-pulse" />
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 glow-text" style="font-family: 'Orbitron', sans-serif;">Rabeesha Batool</h1>
+            <p class="text-xl md:text-lg opacity-90 font-medium">15-Year-Old | Pre-Medical Student | AI & Robotics Enthusiast | Certified Prompt Engineer |</p>
+            <div class="mt-6 flex justify-center space-x-6">
+                <a href="https://www.linkedin.com/in/rabeeshabatool/" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+                <a href="https://github.com/rabeeshabtool" target="_blank" class="text-gray-400 hover:text-gray-300 transition-colors duration-300">
+                    <i class="fab fa-github fa-3x"></i>
+                </a>
+            </div>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                <div class="ai-theme py-2 px-4 rounded-lg">
+                    <span class="text-sm">Certifications</span><br>
+                    <span id="cert-count" class="text-2xl font-bold glow-text">0</span>
+                </div>
+                <div class="ai-theme py-2 px-4 rounded-lg">
+                    <span class="text-sm">Skills</span><br>
+                    <span id="skill-count" class="text-2xl font-bold glow-text">0</span>
+                </div>
+                <div class="ai-theme py-2 px-4 rounded-lg">
+                    <span class="text-sm">Projects</span><br>
+                    <span id="project-count" class="text-2xl font-bold glow-text">0</span>
+                </div>
+                <div class="ai-theme py-2 px-4 rounded-lg">
+                    <span class="text-sm">Learning</span><br>
+                    <span id="learning-count" class="text-2xl font-bold glow-text">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <div class="section-card ai-theme p-8 rounded-lg mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-center glow-text" style="font-family: 'Orbitron', sans-serif;">About Me</h2>
+            <p class="text-lg leading-relaxed text-center">
+                Hello! I'm Rabeesha Batool, a 15-year-old passionate pre-medical student with a deep love for technology. As a tech enthusiast, I specialize in AI, robotics, and automation tools. My journey involves blending healthcare aspirations with cutting-edge innovations like prompt engineering, n8n workflows, and Python programming. I'm actively learning agentic AI on the OpenAI SDK, certified robotic engineering, Docker containerization, Warp terminal, and MCP modern context protocols. Outside academics, I enjoy building prototypes that merge biology and technology for the future.
+            </p>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center glow-text" style="font-family: 'Orbitron', sans-serif;">Certifications</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="section-card ai-theme p-6 rounded-lg flex items-center">
+                <div class="skill-icon">🤖</div> <!-- Note: Using AI-themed icon via CSS -->
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold mb-1">Prompt Engineering Certified</h3>
+                    <p class="text-gray-400 text-sm">From Alison , 2025</p>
+                    <img src="c:\Users\rizwa\Downloads\prompt engineering certificate.jpeg" alt="Certificate badge for Prompt Engineering Certification from AI Academy, showing AI brain icon, gold seal, and text 'Certified' in futuristic blue and silver design" class="rounded mt-2" />
+                </div>
+            </div>
+            <div class="section-card ai-theme p-6 rounded-lg flex items-center">
+                <div class="skill-icon">🔧</div>
+                <div class="ml-4">
+                    <h3 class="text-xl font-semibold mb-1">Certified Agentic AI and Robotic Engineer</h3>
+                    <p class="text-gray-400 text-sm">In Progress, 2026</p>
+                    <img src="c:\Users\rizwa\Downloads\piaic.png" alt="Robotics engineering certification badge with robot arm, gears, and laser-cut precision parts in industrial blue and gray theme" class="rounded mt-2" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center glow-text" style="font-family: 'Orbitron', sans-serif;">Skills</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="section-card ai-theme p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-4 flex items-center">
+                    <span class="skill-icon">🐍</span> Python Junior Programmer
+                </h3>
+                <div class="progress-bar mb-2">
+                    <div class="progress-fill" style="width: 70%;"></div>
+                </div>
+                <p class="text-gray-400 text-sm">Proficient in basic scripts, data handling, and libraries for AI projects.</p>
+            </div>
+            <div class="section-card ai-theme p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-4 flex items-center">
+                    <span class="skill-icon">🚀</span> n8n Automation Developer
+                </h3>
+                <div class="progress-bar mb-2">
+                    <div class="progress-fill" style="width: 65%;"></div>
+                </div>
+                <p class="text-gray-400 text-sm">Designing workflows for automated business processes and integrations.</p>
+            </div>
+            <div class="section-card ai-theme p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-4 flex items-center">
+                    <span class="skill-icon">🤖</span> Agentic AI on OpenAI SDK
+                </h3>
+                <div class="progress-bar mb-2">
+                    <div class="progress-fill" style="width: 50%;"></div>
+                </div>
+                <p class="text-gray-400 text-sm">Building autonomous AI agents for tasks like decision-making.</p>
+            </div>
+            <div class="section-card ai-theme p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-4 flex items-center">
+                    <span class="skill-icon">📦</span> Dockers
+                </h3>
+                <div class="progress-bar mb-2">
+                    <div class="progress-fill" style="width: 45%;"></div>
+                </div>
+                <p class="text-gray-400 text-sm">Containerizing applications for scalable AI deployments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Section -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center glow-text" style="font-family: 'Orbitron', sans-serif;">Currently Learning</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="section-card ai-theme p-6 rounded-lg text-center">
+                <h3 class="text-xl font-semibold mb-4">Warp Advanced Terminal</h3>
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b60b3c37-2c5c-4885-818b-79f670c20440.png" alt="Warp terminal interface screenshot showing futuristic command line with glowing blue text, AI suggestions, and robotic-themed icons in a sleek dark mode with neon accents" class="rounded mx-auto mb-4" />
+                <p class="text-gray-400 text-sm">Exploring AI-enhanced terminal features for efficient coding.</p>
+            </div>
+            <div class="section-card ai-theme p-6 rounded-lg text-center">
+                <h3 class="text-xl font-semibold mb-4">MCP Modern Context Protocol</h3>
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9d093525-bc3b-415d-befd-10c5bbebcc48.png" alt="MCP protocol diagram with interconnected nodes, data flows, and robotic processors in a high-tech network visualization with blue light trails and geometric shapes" class="rounded mx-auto mb-4" />
+                <p class="text-gray-400 text-sm">Understanding context-driven communication in AI systems.</p>
+            </div>
+            <div class="section-card ai-theme p-6 rounded-lg text-center">
+                <h3 class="text-xl font-semibold mb-4">Robotics Engineering Advanced</h3>
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3d902a55-4654-4a98-927d-b7acde5d99e4.png" alt="Robotic engineering lab scene with mechanical arms assembling circuits, 3D printers in action, and holographic schematics displaying biomechanical designs in a modern robotic workshop" class="rounded mx-auto mb-4" />
+                <p class="text-gray-400 text-sm">Diving deeper into biomechanics and autonomous systems for healthcare applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-center py-8">
+        <p class="text-gray-400">© 2024 Rabeesha Batool. Fueled by AI and Robotics Passion.</p>
+    </footer>
+
+    <script>
+        // Dynamic counters
+        function animateCounter(elementId, target) {
+            let count = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                count += increment;
+                if (count >= target) {
+                    count = target;
+                    clearInterval(timer);
+                }
+                document.getElementById(elementId).textContent = Math.floor(count);
+            }, 20);
+        }
+
+        // Trigger counters on load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                animateCounter('cert-count', 2);
+                animateCounter('skill-count', 4);
+                animateCounter('project-count', 5); // Assumed based on context
+                animateCounter('learning-count', 3);
+            }, 500);
+        });
+
+        // Pulse effect for dynamic feel
+        setInterval(() => {
+            document.querySelectorAll('.animate-pulse').forEach(el => {
+                el.classList.toggle('opacity-75');
+            });
+        }, 1500);
+    </script>
+</body>
+</html>
